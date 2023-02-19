@@ -119,9 +119,12 @@ button {
 /*Header */
 
 .header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header .link {
   padding-bottom: 23px;
   padding-top: 24px;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .page-header-container {
@@ -142,6 +145,9 @@ button {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.header .logo {
   margin-right: 70px;
 }
 
@@ -185,17 +191,21 @@ button {
 .hero {
   background-color: var(--headings-dark-color);
   color: var(--primary-white-color);
-  height: 600px;
   display: flex;
   align-content: center;
   align-items: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 58px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 .hero-btn {
   color: var(--primary-white-color);
@@ -221,10 +231,6 @@ button {
 
 /* Features */
 
-.features {
-  padding-bottom: 5px;
-}
-
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +242,10 @@ button {
 }
 
 /* What are we doing */
+
+.examples {
+  padding-top: 0px;
+}
 
 .examples-list {
   display: flex;
@@ -252,11 +262,6 @@ button {
 
 .team-card {
   background-color: var(--light-mode-color);
-  padding-top: 126px;
-}
-
-.team-card-title {
-  margin-bottom: 80px;
 }
 
 .team-card-list {
@@ -264,6 +269,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
+  margin-top: 80px;
 }
 
 .team-card-item {
@@ -274,6 +280,7 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
 
 .team-card .subtitle,
@@ -299,7 +306,12 @@ button {
 
 .footer-text {
   color: var(--accent-color);
-  margin-top: 30px;
+  margin-top: 16px;
+}
+
+.footer .logo {
+  display: block;
+  line-height: 1.2;
 }
 
 /* Portfolio page */
@@ -326,17 +338,13 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn-list {
-  display: flex;
-  margin-bottom: 72px;
-  justify-content: center;
-  align-items: center;
-}
-
 .filter-btn {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
+  margin-bottom: 72px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Project cards */
@@ -360,7 +368,7 @@ button {
   flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
 }
 
-.card .card-content {
+.project-card-item .card-content {
   padding-bottom: 31px;
   border-right: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
